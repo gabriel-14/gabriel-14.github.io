@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKMATE Chess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://images.indianexpress.com/2020/05/chess.jpg" alt="Chess cover" class="cover-photo">
+        <h1 class="page-title">CHECKMATE Chess</h1>
+    </header>
+    <nav class="nav-menu" id="nav-menu">
+        <a href="openings.html#nav-menu" class="text-link">Chess Openings</a>
+        <a href="howto.html#nav-menu" class="text-link">How to play</a>
+        <a href="index.html#nav-menu"><img src="images/logo.png" alt="logo" class="nav-logo"></a>
+        <a href="masters.html#nav-menu" class="text-link">Titled Players</a>
+        <a href="about.html#nav-menu" class="text-link">About</a>
+    </nav>
+    <nav class="nav-button" id="nav-button">
+        <img src="images/logo.png" alt="logo" class="nav-logo dropdown-menu" onclick="showDropdown()">
+    </nav>
+    <nav class="dropdown" id="dropdown-menu">
+        <a href="index.html#nav-button" class="dropdown-option">Home</a>
+        <a href="openings.html#nav-button" class="dropdown-option">Chess Openings</a>
+        <a href="howto.html#nav-button" class="dropdown-option">How to play</a>
+        <a href="masters.html#nav-button" class="dropdown-option">Titled Players</a>
+        <a href="about.html#nav-button" class="dropdown-option">About</a>
+    </nav>
+    <main>
+        <article class="shown-article">
+            <img src="images/tutorial/blank_board.png" alt="Blank Board">
+            <h2 class="article-name">Chess Notation</h2>
+            <h4 class="sub-header">1.e4 e5 2.Nf3 Nc6 3.Bc4</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    Every square in chess has a name based on a coordinate system. All files have a letter, from a - h, going from the queen's rook file to the king's rook file. Each rank has a number from the 1st and 2nd rank where White's pieces begin through the 7th and
+                    8th rank where Black's pieces begin. Each piece is notated this way: King = K. Queen = Q. Rook = R. Bishop = B. Knight = N. Pawn - no symbol. You write a move with the letter of the piece followed by the letter and numbers of the square.
+                    For example, Kf3 if a king reaches the f3 square, or if you place a pawn on f3 then just f3 because pawns have no symbol.
+                </article>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/tutorial/blank_board.png" alt="Blank Board">
+            <h2 class="article-name">Moving and Capturing</h2>
+            <h4 class="sub-header">1.e4 c5</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    A great strategy to help win chess games is to capture opposing pieces. Most captures are made the same way that pieces normally move. Remember, that pawns capture one square diagonally, instead of their normal forward move.
+                </article>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/tutorial/check.png" alt="Check">
+            <h2 class="article-name">Check</h2>
+            <h4 class="sub-header">1.e4 e5 2.f4</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    Check means that one side is threatening to capture the opposing king. You never capture the king in chess, so the other side must get out of check. To notate a check, you add a "+" to the end of your notation. For example, knight to g6 with a check is
+                    notated as Ng6+.
+                </article>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/tutorial/getting_out_of_check.png" alt="Getting out of check">
+            <h2 class="article-name">Getting out of check</h2>
+            <h4 class="sub-header">1.d4 d5 2.c4</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    When you are in check you must escape check. The ways to get out of check are to move the king, block the check with another piece or to capture the checking piece.
+                </article>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/tutorial/checkmate.png" alt="Checkmate">
+            <h2 class="article-name">Checkmate</h2>
+            <h4 class="sub-header">1.e4 e5 2.Nf3 Nc6 3.d4</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    You win when your opponent is in check and cannot escape. That is called checkmate!
+                </article>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/caro-kann_defense.PNG" alt="Caro-Kann Defense">
+            <h2 class="article-name">Caro-Kann Defense</h2>
+            <h4 class="sub-header">1.e4 c6 2.d4 d5</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    The Caro-Kann Defense is known above all for its solidity. The defining move, 1...c6, is the fourth most popular reply to 1.e4 and nearly twice as common as the number five move. It prepares for 2...d5 without blocking in the light-squared bishop, which
+                    is considered the main drawback of its cousin the French Defense (1.e4 e6). A standby for positional players at almost every level, the Caro-Kann was a particular favorite of world champion GM Anatoly Karpov.
+                </article>
+                <div class="pros">
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>Sound pawn structure</li>
+                        <li>Free light-squared bishop</li>
+                        <li>Safe and solid</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>Less space for black</li>
+                        <li>Slower development</li>
+                        <li>There are many different responses for White</li>
+                    </ul>
+                </div>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/french_defense.PNG" alt="French Defense">
+            <h2 class="article-name">French Defense</h2>
+            <h4 class="sub-header">1.e4 e6</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    The French Defense is one of the most popular Black responses to 1.e4. It has consistently been a part of masters' repertoire since the 1800s and one of the favorites of positional players. Usually leading to slower games, this opening is a good choice
+                    for players of all levels.
+                </article>
+                <div class="pros">
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>Solid and sound structure</li>
+                        <li>Sharp counterattacking possibilities</li>
+                        <li>Easy to learn</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>Black has a space disadvantage</li>
+                        <li>Black's light-squared bishop is locked in</li>
+                        <li>Can become passive</li>
+                    </ul>
+                </div>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/tutorial/fastest_mate.png" alt="Fastest Checkmate">
+            <h2 class="article-name">Fastest Checkmate</h2>
+            <h4 class="sub-header">1.e4 e5 2. f4</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    Have you ever wondered what the fastest possible checkmate is in chess? The fastest possible checkmate takes only two moves. Try to follow the moves below. 1. f3 e5 2. g4 Qh4# The notation for checkmate is #.
+                </article>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/tutorial/stalemate.png" alt="Stalemate">
+            <h2 class="article-name">Stalemate</h2>
+            <h4 class="sub-header">1.e4 d5</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    Stalemate occurs when there are no possible moves, but neither king is in check. Stalemate is a draw, even if one of the players has many more pieces on the board. A good example of stalemate occurs when one side just has a king, which is not in check,
+                    but it can't move because any attempted move would be moving into check,
+                </article>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/tutorial/other_draw.png" alt="Other Draw Games">
+            <h2 class="article-name">Other Draw Games</h2>
+            <h4 class="sub-header">1.e4 e5 2. Nf3 Nc6 4. Bb5</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    Not all chess games are won or lost. Sometimes they end in a draw. These are the ways that can happen: 1. Stalemate. 2. Both players agree to a draw. 3. If the exact same position has repeated three times, either player can claim a draw. 4. If 50 moves
+                    have occurred without a pawn move or a capture either player can claim a draw.
+                </article>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>

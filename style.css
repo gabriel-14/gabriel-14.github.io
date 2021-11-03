@@ -1,0 +1,284 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    /* background-image: url(https://images.indianexpress.com/2020/05/chess.jpg); */
+    /* background-size: contain; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    background: black;
+    width: 100%;
+    color: blanchedalmond;
+}
+
+body {
+    /* background-color: #e5e4e2; */
+    background-color: whitesmoke;
+}
+
+main {
+    display: block;
+    color: black;
+    margin-top: 1em;
+}
+
+main>article {
+    padding: 8px;
+}
+
+main>article:nth-child(even) {
+    background-color: black;
+    color: whitesmoke
+}
+
+.cover-photo {
+    display: block;
+    margin: auto;
+    width: inherit;
+}
+
+.page-title {
+    /* display: none; */
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.nav-menu {
+    /* display: none; */
+    display: flex;
+    list-style: none;
+    background-color: black;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 50px;
+    padding: 5px;
+}
+
+.nav-menu,
+.nav-button {
+    box-shadow: 0px 10px 5px whitesmoke;
+}
+
+.nav-menu .text-link {
+    text-decoration: none;
+    color: blanchedalmond;
+    padding: 30px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    background-color: silver;
+    font-weight: 900;
+    color: black;
+    text-decoration: underline;
+}
+
+.nav-button {
+    display: none;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+}
+
+.dropdown-menu {
+    display: block;
+    margin: auto;
+}
+
+.dropdown {
+    display: none;
+    flex-direction: column;
+    position: sticky;
+    top: 70px;
+}
+
+.dropdown a {
+    text-decoration: none;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    color: blanchedalmond;
+}
+
+.pros ul,
+.cons ul {
+    margin-left: 20px;
+}
+
+.show-button {
+    padding: 5px 20px;
+    /* background-color: rgb(161, 91, 0); */
+    background-image: linear-gradient(to bottom, rgb(161, 91, 0), gold);
+    border-radius: 15px;
+    display: block;
+    margin: 0px auto;
+    font-size: x-large;
+    color: black;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.show-button:hover {
+    background-image: linear-gradient(to bottom, gold, rgb(161, 91, 0));
+}
+
+.show-button:active {
+    background-image: linear-gradient(to bottom, rgb(161, 91, 0), gold);
+}
+
+
+/* The following lines are for the article snippet. */
+
+.article-snippet {
+    display: grid;
+    grid-template-areas: "img article-name sub-header sub-header" "img article-details article-details article-details" "img show-button show-button show-button";
+    max-height: 25vh;
+    grid-template-columns: 30vw 20vw 25vw 25vw;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.article-snippet img {
+    align-self: center;
+    justify-self: center;
+    height: 70%;
+    grid-area: img;
+}
+
+.article-snippet .article-name {
+    grid-area: article-name;
+}
+
+.article-snippet .sub-header {
+    grid-area: sub-header;
+    white-space: nowrap;
+    max-width: 1fr;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.article-snippet .article-details {
+    grid-area: article-details;
+    max-height: 70%;
+    overflow-y: hidden;
+}
+
+.article-snippet .article-details .article-text {
+    white-space: nowrap;
+    height: fit-content;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.article-snippet .article-details>div {
+    display: none;
+}
+
+.article-snippet .show-button {
+    grid-area: show-button;
+    align-self: end;
+}
+
+
+/* The following lines are for the shown article. */
+
+.shown-article img {
+    display: block;
+    margin: auto;
+    width: 30%;
+}
+
+.shown-article h2,
+h4 {
+    text-align: center;
+}
+
+.article-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 15px;
+}
+
+.article-details .article-text {
+    grid-column: 1/3;
+}
+
+.shown-article .show-more,
+.article-snippet .show-less {
+    display: none;
+}
+
+.shown-article .show-less,
+.article-snippet .show-more {
+    user-select: none;
+}
+
+
+/* The next line shows the dropdown menu when the nav-button is clicked. */
+
+.show {
+    display: flex;
+}
+
+@media screen and (max-width: 400px) {
+    .shown-article img {
+        width: 95%;
+    }
+    .article-snippet img {
+        height: auto;
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-menu {
+        display: none;
+    }
+    .nav-button {
+        display: block;
+    }
+    .shown-article img {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    main {
+        max-width: 75vw;
+        margin: 10px auto;
+        border: 2px solid black;
+        border-top: none;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        box-shadow: 8px 0px 5px silver, -8px 0px 5px silver;
+    }
+    main>article {
+        padding: 15px;
+    }
+    .article-snippet {
+        grid-template-columns: 20% 20% 25% 38%;
+    }
+    .article-snippet img {
+        height: 85%;
+    }
+    main>article:last-child {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .article-snippet {
+        grid-template-columns: 17% 20% 25% 38%;
+    }
+}

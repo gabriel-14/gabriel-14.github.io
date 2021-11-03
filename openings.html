@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKMATE Chess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://images.indianexpress.com/2020/05/chess.jpg" alt="Chess cover" class="cover-photo">
+        <h1 class="page-title">CHECKMATE Chess - Chess Opening</h1>
+    </header>
+    <nav class="nav-menu" id="nav-menu">
+        <a href="openings.html#nav-menu" class="text-link">Chess Openings</a>
+        <a href="howto.html#nav-menu" class="text-link">How to play</a>
+        <a href="index.html#nav-menu"><img src="images/logo.png" alt="logo" class="nav-logo"></a>
+        <a href="masters.html#nav-menu" class="text-link">Titled Players</a>
+        <a href="about.html#nav-menu" class="text-link">About</a>
+    </nav>
+    <nav class="nav-button" id="nav-button">
+        <img src="images/logo.png" alt="logo" class="nav-logo dropdown-menu" onclick="showDropdown()">
+    </nav>
+    <nav class="dropdown" id="dropdown-menu">
+        <a href="index.html#nav-button" class="dropdown-option">Home</a>
+        <a href="openings.html#nav-button" class="dropdown-option">Chess Openings</a>
+        <a href="howto.html#nav-button" class="dropdown-option">How to play</a>
+        <a href="masters.html#nav-button" class="dropdown-option">Titled Players</a>
+        <a href="about.html#nav-button" class="dropdown-option">About</a>
+    </nav>
+    <main>
+        <article class="shown-article">
+            <img src="images/italian_game.PNG" alt="Italian Game">
+            <h2 class="article-name">Italian Game</h2>
+            <h4 class="sub-header">1.e4 e5 2.Nf3 Nc6 3.Bc4</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    The Italian Game is one of the oldest openings in chess and has been around for centuries. This classical 1.e4 opening can lead to slower and positional games as well as open, tactical battles. Although very common among beginners, the Italian Game is
+                    a part of the repertoire of players of every level.
+                </article>
+                <div class="pros">
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>Natural Play</li>
+                        <li>Focus on the Center</li>
+                        <li>Rapid Development</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>The bishop on c4 might be exposed</li>
+                        <li>Black's center is not under immediate pressure</li>
+                    </ul>
+                </div>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/sicilian_defence.PNG" alt="Sicilian Defense">
+            <h2 class="article-name">Sicilian Defense</h2>
+            <h4 class="sub-header">1.e4 c5</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    The Sicilian Defense is the most popular response to White's 1.e4. Employed by masters and beginners alike, the Sicilian Defense is a reputable and positionally sound opening. Still, the Sicilian is a combative opening that tends to lead to dynamic and
+                    sharp positions. One of the oldest registered openings, the Sicilian is full of theory and was used by most of the greatest players in history. World champions GMs Bobby Fischer, Garry Kasparov, Viswanathan Anand, Vladimir Kramnik,
+                    and Magnus Carlsen are just a few of its adopters.
+                </article>
+                <div class="pros">
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>Creates unbalanced games</li>
+                        <li>Black has good attacking chances</li>
+                        <li>It's an excellent opening to play when you need to win</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>White has many ways to meet the Sicilian</li>
+                        <li>White gets great attacking chances in the main variations</li>
+                        <li>There is a lot of theory</li>
+                    </ul>
+                </div>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/kings_gambit.PNG" alt="King's Gambit">
+            <h2 class="article-name">King's Gambit</h2>
+            <h4 class="sub-header">1.e4 e5 2.f4</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    The King's Gambit is an age-old aggressive opening that Romantic chess players revered. Largely employed by top players for more than 300 years, this opening leads to open games that are exciting and, in most cases, decisive. With the rise of engines
+                    and computer analysis, top players have virtually abandoned the King's Gambit in high-stakes games because of its risky nature. However, tactical players who enjoy sharp games can still employ this opening to play for a fabulous (and
+                    usually sacrificial) attack to win the game in style.
+                </article>
+                <div class="pros">
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>It's an exhilarating and fun opening</li>
+                        <li>White goes for the initiative</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>Black has many different options to choose from</li>
+                        <li>White's king can become exposed</li>
+                        <li>It's a risky opening</li>
+                    </ul>
+                </div>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/queens_gambit.PNG" alt="Queen's Gambit">
+            <h2 class="article-name">Queen's Gambit</h2>
+            <h4 class="sub-header">1.d4 d5 2.c4</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    The Queen's Gambit is one of the oldest and most reputable 1.d4 openings for White. Unlike 1.e4 openings, the Queen's Gambit usually evolves into a strategic game rather than an all-out tactical battle. Despite being around for centuries, this opening
+                    is still one of the cornerstones of every elite players' repertoire. It's also an excellent choice for beginners and intermediate players.
+                </article>
+                <div class="pros">
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>Fights to control the center</li>
+                        <li>It puts immediate pressure on Black</li>
+                        <li>Gains space</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>White may have to spend time getting the pawn back</li>
+                        <li>Less attacking chances against the black king</li>
+                        <li>Black may aim to counterattack d4</li>
+                    </ul>
+                </div>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/scotch_game.PNG" alt="Scotch Game">
+            <h2 class="article-name">Scotch Game</h2>
+            <h4 class="sub-header">1.e4 e5 2.Nf3 Nc6 3.d4</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    The Scotch Game is a centuries-old 1.e4 opening for White and one of the best alternatives to the Ruy Lopez. A good opening for beginners, the Scotch is also an excellent weapon for players of every strength level. One of its most prominent adopters was
+                    GM Garry Kasparov. Other elite players like GMs Vladimir Kramnik, Levon Aronian, and Magnus Carlsen also have the Scotch as part of their arsenal.
+                </article>
+                <div class="pros">
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>White virtually guarantees himself a space advantage</li>
+                        <li>Black is unable to maintain the e5 point.</li>
+                        <li>It avoids the well-analyzed Ruy Lopez.</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>It releases the tension very early.</li>
+                        <li>Recapturing the d4 pawn will require a second move by the white knight.</li>
+                        <li>The e4 pawn can later come under attack.</li>
+                    </ul>
+                </div>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/caro-kann_defense.PNG" alt="Caro-Kann Defense">
+            <h2 class="article-name">Caro-Kann Defense</h2>
+            <h4 class="sub-header">1.e4 c6 2.d4 d5</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    The Caro-Kann Defense is known above all for its solidity. The defining move, 1...c6, is the fourth most popular reply to 1.e4 and nearly twice as common as the number five move. It prepares for 2...d5 without blocking in the light-squared bishop, which
+                    is considered the main drawback of its cousin the French Defense (1.e4 e6). A standby for positional players at almost every level, the Caro-Kann was a particular favorite of world champion GM Anatoly Karpov.
+                </article>
+                <div class="pros">
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>Sound pawn structure</li>
+                        <li>Free light-squared bishop</li>
+                        <li>Safe and solid</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>Less space for black</li>
+                        <li>Slower development</li>
+                        <li>There are many different responses for White</li>
+                    </ul>
+                </div>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/french_defense.PNG" alt="French Defense">
+            <h2 class="article-name">French Defense</h2>
+            <h4 class="sub-header">1.e4 e6</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    The French Defense is one of the most popular Black responses to 1.e4. It has consistently been a part of masters' repertoire since the 1800s and one of the favorites of positional players. Usually leading to slower games, this opening is a good choice
+                    for players of all levels.
+                </article>
+                <div class="pros">
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>Solid and sound structure</li>
+                        <li>Sharp counterattacking possibilities</li>
+                        <li>Easy to learn</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>Black has a space disadvantage</li>
+                        <li>Black's light-squared bishop is locked in</li>
+                        <li>Can become passive</li>
+                    </ul>
+                </div>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/kings_gambit.PNG" alt="King's Gambit">
+            <h2 class="article-name">King's Gambit</h2>
+            <h4 class="sub-header">1.e4 e5 2. f4</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    The King's Gambit is an age-old aggressive opening that Romantic chess players revered. Largely employed by top players for more than 300 years, this opening leads to open games that are exciting and, in most cases, decisive. With the rise of engines
+                    and computer analysis, top players have virtually abandoned the King's Gambit in high-stakes games because of its risky nature. However, tactical players who enjoy sharp games can still employ this opening to play for a fabulous (and
+                    usually sacrificial) attack to win the game in style.
+                </article>
+                <div class="pros">
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>Black opens the game immediately</li>
+                        <li>Usually both black bishops have freedom</li>
+                        <li>A provocative opening</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>Black has many different options to choose from</li>
+                        <li>White's king can become exposed</li>
+                        <li>It's a risky opening</li>
+                    </ul>
+                </div>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/scandinavian_defence.PNG" alt="Scandinavian Defense">
+            <h2 class="article-name">Scandinavian Defense</h2>
+            <h4 class="sub-header">1.e4 d5</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    The Scandinavian Defense, formerly better known in English language texts as the Center-Counter, is Black's seventh most popular response to 1.e4.
+                </article>
+                <div class="pros">
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>Black opens the game immediately</li>
+                        <li>Usually both black bishops have freedom</li>
+                        <li>A provocative opening</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>After the capture 2.exd5, Black loses time recapturing</li>
+                        <li>Because Black loses some time, he is in danger of a quick knockout</li>
+                        <li>White usually has more central space</li>
+                    </ul>
+                </div>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+        <article class="article-snippet">
+            <img src="images/spanish_game.PNG" alt="Spanish Game">
+            <h2 class="article-name">Spanish Game</h2>
+            <h4 class="sub-header">1.e4 e5 2. Nf3 Nc6 4. Bb5</h4>
+            <section class="article-details">
+                <article class="article-text">
+                    The Ruy Lopez (also known as the Spanish Opening or Spanish Game) is one of the oldest and most analyzed openings in chess history. Most of the world's top players have adopted this rich opening as part of their repertoire, and many of them play it with
+                    both colors. Despite having a large amount of theory, it is an opening that players of all levels can enjoy.
+                </article>
+                <div class="pros">
+                    <h3>Pros</h3>
+                    <ul>
+                        <li>It leads to very complex and multifaceted play</li>
+                        <li>It tends to give White long-term pressure</li>
+                        <li>White develops rapidly, and castles quickly</li>
+                        <li>There are good lines for both tactical and positional players</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Cons</h3>
+                    <ul>
+                        <li>It's difficult to learn its extensive theory</li>
+                        <li>Black has a vast number of defenses to choose from</li>
+                    </ul>
+                </div>
+            </section>
+            <h4 class="show-button show-less" onclick="toggleArticle(this)">Show less</h4>
+            <h4 class="show-button show-more" onclick="toggleArticle(this)">Show more</h4>
+        </article>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
